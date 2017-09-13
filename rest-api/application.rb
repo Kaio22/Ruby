@@ -7,8 +7,6 @@ get '/' do
    erb :index
 end
 
-
-
 #get '/cacilds' do
 #File.read("/tmp/resolv.conf")
 #end
@@ -17,4 +15,9 @@ post '/login' do
   usuarios = []
   usuarios.push(params)
   puts usuarios.inspect
+end
+
+get '/usuarios' do
+     @usuarios = ["aa","bb"]
+    erb :usuarios #locals: usuarios
 end
