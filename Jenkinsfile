@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sudo fpm -m "Kaio <kaio@tois.com>" --url "http://firma.com" --description "Nossa app de teste" -a noarch -s dir -t deb -n my-app --deb-user root --deb-group root -v 0.0.1 --prefix /opt/my-app .'
+        sh 'docker build -t ruby-ci-example .'
       }
     }
     stage('Tests') {
