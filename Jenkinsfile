@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'echo "Realizando o deploy!"'
+        sh 'docker run -d -p 4567:9090 ruby-ci-example'
       }
     }
   }
