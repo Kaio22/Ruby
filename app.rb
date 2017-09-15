@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "codeops"
+  "codeops AHAHAHAHA"
 end
 
 
