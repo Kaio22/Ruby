@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Tests') {
       steps {
-        sleep 5
+        sh 'ruby test-app.rb'
       }
     }
     stage('Aproval') {
