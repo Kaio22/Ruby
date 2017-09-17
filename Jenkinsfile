@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t ruby-ci-example .'
-        sh 'bundle install'
       }
     }
     stage('Tests') {
