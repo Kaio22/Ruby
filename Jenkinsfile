@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t ruby-ci-example .'
+        echo 'Esta rodando?'
       }
     }
     stage('Tests') {
