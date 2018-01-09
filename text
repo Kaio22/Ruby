@@ -1,0 +1,9 @@
+definindo metodo
+--------------------------------
+def fale_algo fale
+    puts "#{fale}"
+end
+
+chamando o metodo
+--------------------------------
+fale_algo "E ai Jovem"
